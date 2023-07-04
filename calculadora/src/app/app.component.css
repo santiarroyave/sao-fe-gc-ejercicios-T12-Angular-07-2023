@@ -1,0 +1,63 @@
+@media (min-width:768px){
+    .contenedor{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+
+
+/*****************************/
+/* Pantalla */
+/*****************************/
+#pantalla .col{
+    background-color: #f5f6f5;
+    box-shadow: .1em .1em .1em rgba(0, 0, 0, 10%);
+    min-height: 3.5em;
+}
+#pantalla h2{
+    padding-top: .5em;
+    padding-bottom: .1em;
+}
+#pantalla h3{
+    padding-top: .1em;
+    padding-bottom: .3em;
+}
+
+
+/*****************************/
+/* TECLAS */
+/*****************************/
+.tecla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3em;
+    font-size: 1.5em;
+}
+
+.tecla:active{
+    filter: brightness(85%);
+}
+
+.teclaT1{
+    background-color: #8d6e63;
+    color: #fff;
+}
+
+.teclaT2{
+    background-color: #4db7ad;
+    color: #fff;
+    box-shadow: .1em .1em .1em rgba(0, 0, 0, 10%);
+}
+
+#contenedorNumeros{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    box-shadow: .1em .1em .1em rgba(0, 0, 0, 10%);
+}
+
+#contenedorOperadores{
+    padding: 0;
+}

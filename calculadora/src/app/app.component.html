@@ -1,0 +1,69 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<div class="container contenedor">
+
+    <!-- Pantalla -->
+    <div id="pantalla" class="row row-column-auto d-flex flex-column align-items-center">
+      <div class="col col-md-8 col-lg-4 d-flex justify-content-end">
+        <h2>{{valorIntroducido1}} {{operador}} {{valorIntroducido2}}</h2>
+        <!-- <h2>{{notacion}}</h2> -->
+        <h2 *ngIf="valorIntroducido1==''">0</h2>
+      </div>
+      <div class="col col-md-8 col-lg-4 d-flex justify-content-end">
+        <h3>{{resultado}}</h3>
+      </div>
+    </div>
+
+    <div id="contenedorTeclas" class="row d-flex flex-block justify-content-center">
+      
+      <!-- Contenedor de números -->
+      <div id="contenedorNumeros" class="col col-9 col-md-6 col-lg-3">
+        <div class="tecla teclaT1" (click)="addNum('9')">9</div>
+        <div class="tecla teclaT1" (click)="addNum('8')">8</div>
+        <div class="tecla teclaT1" (click)="addNum('7')">7</div>
+        <div class="tecla teclaT1" (click)="addNum('6')">6</div>
+        <div class="tecla teclaT1" (click)="addNum('5')">5</div>
+        <div class="tecla teclaT1" (click)="addNum('4')">4</div>
+        <div class="tecla teclaT1" (click)="addNum('3')">3</div>
+        <div class="tecla teclaT1" (click)="addNum('2')">2</div>
+        <div class="tecla teclaT1" (click)="addNum('1')">1</div>
+        <div class="tecla teclaT1" (click)="addNum('.')">.</div>
+        <div class="tecla teclaT1" (click)="addNum('0')">0</div>
+        <div class="tecla teclaT1" (click)="addNum('00')">00</div>
+      </div>
+
+      <!-- Contenedor de teclas de operación -->
+      <div id="contenedorOperadores" class="col col-3 col-md-2 col-lg-1">  
+        <div class="tecla teclaT2" (click)="borrar()">DEL</div>
+        <div class="tecla teclaT2" (click)="addOp('/')">/</div>
+        <div class="tecla teclaT2" (click)="addOp('x')">X</div>
+        <div class="tecla teclaT2" (click)="addOp('-')">-</div>
+        <div class="tecla teclaT2" (click)="addOp('+')">+</div>
+        <div class="tecla teclaT2" (click)="igual()">=</div>
+        
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
